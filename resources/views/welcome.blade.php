@@ -6,6 +6,8 @@
 
         <title>Laravel</title>
 
+        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
@@ -136,5 +138,6 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
     </body>
 </html>
