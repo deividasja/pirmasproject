@@ -110,9 +110,17 @@ class ArticlesController extends Controller
 
     /**
      * Remove the specified resource from storage.
+     * 
+     * @param int $id
+     * @return RedirectResponse
      */
-    public function destroy(string $id)
+    public function destroy(string $id): RedirectResponse
     {
-        //
+        $article = (new Article())->findOrFail($id);
+        $article->delete();
+
+        session()->flash('status', 'Article was deleted!');
+
+        return redirect()->route('article.index');
     }
 }
