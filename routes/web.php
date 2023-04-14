@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\HomeController;
@@ -23,3 +24,9 @@ Route::get('/', function () {
 
 
 Route::resource('articles', ArticlesController::class);
+
+Route::get('login', [LoginController::class, 'showLoginForm'])->name('login.form');
+Route::post('login', [LoginController::class, 'login'])->name('login');
+Route::post('logout', [LoginController::class, 'logout'])->name('logout');
+
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
