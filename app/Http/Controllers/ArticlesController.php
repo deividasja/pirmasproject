@@ -121,6 +121,6 @@ class ArticlesController extends Controller
 
         session()->flash('status', 'Article was deleted!');
 
-        return redirect()->route('article.index');
+        return redirect()->route('articles.index');
     }
 }
