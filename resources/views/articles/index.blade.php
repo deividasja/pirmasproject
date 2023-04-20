@@ -1,10 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2>List of articles</h2>
+    <h2>List of conferences</h2>
+    @guest
+    @else
     @if(session('status'))
         <div style="background-color: green; color: lime;">{{ session('status') }}</div>
     @endif
-    <a href="{{ route('articles.create') }}"><button type="button">Create article</button></a>
+    <a href="{{ route('articles.create') }}"><button type="button">Create a conference</button></a>
+    @endguest
     @each('articles.partials.list', $articles, 'article')
 @endsection
