@@ -5,4 +5,8 @@ $(function () {
         e.preventDefault();
         $('#logout-form').trigger('submit');
     });
+
+    // $('.datepicker').datepicker([
+
+    // ]);
 });
