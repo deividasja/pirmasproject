@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Login form</title>
 </head>
+<style>
+body {
+  background-color: wheat;
+}
+    </style>
 <body>
 <form action="{{ route('login') }}" method="POST">
     @csrf
