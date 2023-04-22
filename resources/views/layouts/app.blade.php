@@ -29,6 +29,16 @@
                 @yield('content')
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                @yield('date')
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                @yield('address')
+            </div>
+        </div>
     </main>
 </div>
 <script src="{{ mix('js/app.js') }}"></script>

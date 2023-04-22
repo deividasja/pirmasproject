@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h2>List of conferences</h2>
+    <h2>{{ trans('app.list') }}</h2>
     @guest
     @else
     @if(session('status'))

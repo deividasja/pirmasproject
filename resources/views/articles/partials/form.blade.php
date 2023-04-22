@@ -12,3 +12,19 @@
             <p>{{ $message }}</p>
         @enderror
 </div>
+
+<div>
+        <label for="date-input">Date</label>
+        <input type="date" id="date-input" name="date">{{ old('date', optional($article ?? null)->date) }}</date>
+        @error('date')
+            <p>{{ $message }}</p>
+        @enderror
+</div>
+
+<div>
+    <label for="address-input">Address</label>
+        <input type="text" id="address-input" name="address" value="{{ old('address', optional($article ?? null)->address) }}">
+        @error('address')
+            <p>{{ $message }}</p>
+        @enderror
+    </div>

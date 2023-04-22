@@ -10,4 +10,6 @@
 
     <h1>{{ $articles['title'] }}</h1>
     <p>{{ $articles['content'] }}</p>
+    <p>{{ $articles['date'] }}</p>
+    <p>{{ $articles['address'] }}</p>
 @endsection

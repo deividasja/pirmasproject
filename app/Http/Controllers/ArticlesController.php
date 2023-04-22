@@ -56,8 +56,9 @@ class ArticlesController extends Controller
      */
     public function store(StoreArticleRequest $request, Article $article): RedirectResponse
     {
-
+//dd($request->all());
         $validated = $request->validated();
+        //dd($validated);
         $articleItem = $article->create($validated);
 
         //$article->title = $validated['title'];

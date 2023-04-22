@@ -3,7 +3,7 @@
 @section('title', 'Conference Edit Form')
 
 @section('content')
-    <h4>Conference edit form</h4>
+    <h4>{{ trans('app.edit') }}</h4>
     <form action="{{ route('articles.update', ['article' => $article->id]) }}" method="POST">
         @csrf
         @method('PUT')
