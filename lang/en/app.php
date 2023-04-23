@@ -5,6 +5,6 @@ return [
     'edit' => 'Conference edit form',
     'list' => 'List of conferences',
     'home_module' => [
-        'index.title' => 'Pagrindinis'
+        'index.title' => 'Main'
     ],
 ];
