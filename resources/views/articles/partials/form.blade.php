@@ -13,13 +13,16 @@
         @enderror
 </div>
 
+
 <div>
         <label for="date-input">Date</label>
-        <input type="date" id="date-input" name="date">{{ old('date', optional($article ?? null)->date) }}</date>
+        <input type="datetime-local" id="date-input" name="date" value="{{ old('date', optional($article ?? null)->date) }}">
         @error('date')
             <p>{{ $message }}</p>
         @enderror
 </div>
+
+
 
 <div>
     <label for="address-input">Address</label>
